@@ -37,7 +37,7 @@
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .05em; /* Adjust as needed */
     text-align: center;
-    font-size: 30px;
+    font-size: 26px;
     line-height: 60px;
     font-family: 'Courier New', Courier, monospace;
     animation: 
@@ -48,7 +48,7 @@
   /* The typing effect */
 @keyframes typing1 {
     from { width: 0 }
-    to { width: 330px}
+    to { width: 300px}
   }
 /*Typing 2*/  
   .typewriter2 {
