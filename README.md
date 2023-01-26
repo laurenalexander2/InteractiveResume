@@ -1,2 +1,2 @@
-#Interactive Resume
+Interactive Resume
 Interactive Resume comprised of HTML & CSS files, with attached projects and php contact form
