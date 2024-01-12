@@ -163,19 +163,19 @@ button{
 
 button:hover{
   background-color: transparent;
+  color:black;
+  font-style: italic;
 }
 
 button a{
   text-decoration: none;
   color:rgb(255, 255, 255);
 }
-button a:hover{
-  color:black; 
-  font-weight: bold;
-  font-style: italic;
-  background-color: transparent;
-}
 
+button:hover a{
+  color:black;
+  font-style: italic;
+}
 .project a {
   line-height: 30px;
   width: 100%;
