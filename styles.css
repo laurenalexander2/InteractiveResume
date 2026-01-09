@@ -48,7 +48,7 @@
     line-height: 60px;
     font-family: 'Courier New', Courier, monospace;
     animation: 
-      typing1 3s steps(18, end),
+      typing1 4s steps(18, end),
       blink-caret .75s step-end infinite;
   }
 
@@ -71,7 +71,7 @@
     line-height: 60px;
     font-family: 'Courier New', Courier, monospace;
     animation: 
-      typing2 1.3s steps(8, end),
+      typing2 2.2s steps(8, end),
       blink-caret .75s step-end infinite;
   }
 
@@ -95,14 +95,14 @@
     line-height: 60px;
     font-family: 'Courier New', Courier, monospace;
     animation: 
-      typing3 1s steps(6, end),
+      typing3 2s steps(6, end),
       blink-caret .75s step-end infinite;
   }
 
   /* The typing effect */
 @keyframes typing3 {
     from { width: 0 }
-    to {width: 280px}
+    to {width: 250px}
   }
 
   /*Typing 4*/
@@ -113,20 +113,20 @@
     border-right: .15em solid transparent; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .05em; /* Adjust as needed */
+    letter-spacing: .06em; /* Adjust as needed */
     text-align: center;
-    font-size: 42px;
+    font-size: 50px;
     line-height: 60px;
     font-family: 'Courier New', Courier, monospace;
     animation: 
-      typing3 1.8s steps(11, end),
+      typing3 1.7s steps(8, end),
       blink-caret .75s step-end infinite;
   }
 
   /* The typing effect */
 @keyframes typing4 {
     from { width: 0 }
-    to {width: 300px}
+    to {width: 10px}
   }
 
   /* The typewriter cursor effect */
