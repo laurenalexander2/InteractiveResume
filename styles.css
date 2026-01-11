@@ -3,6 +3,10 @@
     
   }
   
+  .sublink{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  }
   .container {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -75,11 +79,11 @@
       blink-caret .75s step-end infinite;
   }
 
-  /* The typing effect */
+  /* The typing effect 
 @keyframes typing2 {
     from { width: 0 }
     to {width: 300px}
-  }
+  }*/
 
   /*Typing 3*/
   .typewriter3 {
@@ -99,11 +103,12 @@
       blink-caret .75s step-end infinite;
   }
 
-  /* The typing effect */
+  /* The typing effect 
 @keyframes typing3 {
     from { width: 0 }
     to {width: 250px}
   }
+*/
 
   /*Typing 4*/
   .typewriter4 {
@@ -123,13 +128,13 @@
       blink-caret .75s step-end infinite;
   }
 
-  /* The typing effect */
+  /* The typing effect 
 @keyframes typing4 {
     from { width: 0 }
     to {width: 10px}
   }
-
-  /* The typewriter cursor effect */
+ 
+  The typewriter cursor effect  */
   @keyframes blink-caret {
     from, to { border-color: transparent }
   }
