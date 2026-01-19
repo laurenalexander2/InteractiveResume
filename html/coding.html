@@ -63,12 +63,19 @@
         <br>
         <br>
         <ul>
-            <a href=https://print-map.vercel.app/>Relational Art Index</a>
+            <a href=https://print-map.vercel.app/>Semantic Map of AIC Prints</a>
             </ul>
             <ul>
                 <a href=https://github.com/laurenalexander2/print-map-v2/blob/main/README.md><div class="sublink"><b>Technical Details</b></div></a>
-                <li>Prints embedded into multi-dimensional vector space, rendered as a 2D zoomable, pannable map </li>
-                <li>Proof of concept - will scale in future iterations</li>
+                <li>Using Art Institute of Chicago's API, loaded all their artworks, filtering for prints</li>
+                <li>Collected relevant metadata (artist name, title, origin, date, medium) into a single "semantic string."</li>
+<li>Passed the string into the CLIP text encoder, which turns the string into a vector in  ℝ⁵¹² (512 dimensional space!)</li>
+<li>These vectors are then passed into UMAP, which projects their 512 dimensions into 2d. This isn't perfect; no way to visualize 512 dimensions on a computer screen! It preserves local relationships, but it discards global geometry.
+</li>
+<li>Reduced to points in 2D semantic space, each embedded print is assigned a tile spaces of the frontend, one filled with their thumbnails (pulled from the Art Institute of Chicago on page load)</li>
+<li>
+User can zoom in/out and click on an artwork for metadata (metadata popover only works when zoomed in). </li>
+                <li>Neatly abstracted, easily reusable Proof of Concept - will optimize in future iterations</li>
             </ul>
         <br>
         <br>
