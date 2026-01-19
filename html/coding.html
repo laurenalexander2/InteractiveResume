@@ -50,14 +50,13 @@
         <ul> <a href=https://matrixvision.streamlit.app>Print Comparator</a> </ul>
         <ul>
          <a href=https://github.com/laurenalexander2/ai_state_detector_full/blob/master/README.md><div class="sublink"><b>Technical Details</b></div></a>
-            <li>Computer vision-backed print comparator - Designed for state analysis</li>
+            <li>Computer vision-backed print comparator - designed for state analysis</li>
             <li>Preprocesses images, converting them to grayscale, setting image size, cropping, denoising, and normalizing contrast
             </li>
             <li>Projects two impressions into the same coordinate space via feature-based homography (using
                 AKAZE/SIFT + RANSAC)</li>
             <li>Produces two visual analysis modes: Binary Difference Map, backed by per pixel arithmetic (pixel-wise absolute difference between the two impressions) and 
-                Channel Mapped Color Overlays, where the base image is mapped to red, the target image is mapped to blue, and the overlaps between them are neutralzied, 
-                rendered in grayscale to leave differences unobstructed.
+                Channel Mapped Color Overlays, where the base image is mapped to red, the target image is mapped to blue, and the overlaps between them are neutralzied.
             </li>
         </ul>
         <br>
@@ -72,10 +71,10 @@
 <li>Passed the string into the CLIP text encoder, which turns the string into a vector in  ℝ⁵¹² (512 dimensional space!)</li>
 <li>These vectors are then passed into UMAP, which projects their 512 dimensions into 2d. This isn't perfect; no way to visualize 512 dimensions on a computer screen! It preserves local relationships, but it discards global geometry.
 </li>
-<li>Reduced to points in 2D semantic space, each embedded print is assigned a tile spaces of the frontend, one filled with their thumbnails (pulled from the Art Institute of Chicago on page load)</li>
+<li>Reduced to points in 2D semantic space, each embedded print is assigned a tile space. On the frontend, these are filled with corresponding image thumbnails (pulled from the Art Institute of Chicago on page load)</li>
 <li>
 User can zoom in/out and click on an artwork for metadata (metadata popover only works when zoomed in). </li>
-                <li>Neatly abstracted, easily reusable Proof of Concept - will optimize in future iterations</li>
+                <li>Neatly abstracted, easily reusable</li>
             </ul>
         <br>
         <br>
