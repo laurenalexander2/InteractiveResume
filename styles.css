@@ -94,15 +94,17 @@
   }
 
   /* Projects animation - 8 characters */
-  .typewriter3:has(a[href="html/coding.html"]) {
-    animation: 
+  .typewriter3:has(a[href="html/coding.html"]),
+  .typewriter3.typewriter3--projects {
+    animation:
       typing3-projects 2s steps(8, end) forwards,
       blink-caret .75s step-end infinite;
   }
 
   /* Contact animation - 7 characters */
-  .typewriter3:has(a[href="html/contact.html"]) {
-    animation: 
+  .typewriter3:has(a[href="html/contact.html"]),
+  .typewriter3.typewriter3--contact {
+    animation:
       typing3-contact 1.75s steps(7, end) forwards,
       blink-caret .75s step-end infinite;
   }
